@@ -1,6 +1,13 @@
-﻿# PortScannerPro
+# PortScannerPro
 
-Polite threaded TCP port scanner (Python). Only scan targets you own or are authorized to test.
+A polite threaded TCP port scanner written in Python. Designed for learning and authorized testing only.
 
-## Quick run
-python port_scanner.py --host 127.0.0.1 --ports 22,80,443 --timeout 0.3 --workers 50
+## Usage
+```bash
+python port_scanner.py --host 192.168.1.10 --ports 1-1024 --timeout 0.5 --workers 200 --json results.json
+```   <-- add this closing triple backtick
+
+## Demo Screenshot
+![Successful scan demo](assets/scan-success.png)
+> Screenshot showing a completed localhost scan (`127.0.0.1`) using PortScannerPro.
+
